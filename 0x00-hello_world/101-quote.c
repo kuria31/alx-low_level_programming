@@ -9,5 +9,5 @@
 int main(void)
 {
 int a;
-a = write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", 100);
+A = write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", 100);
 }
