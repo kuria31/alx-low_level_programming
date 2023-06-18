@@ -7,6 +7,7 @@
  */
 int main(void)
 {
-putchar("and that piece of art is useful\"  - Dora Korpar, 2015-10-19");
+char ch[100]="and that piece of art is useful\"  - Dora Korpar, 2015-10-19";
+putchar(ch)
 return (0);
 }
