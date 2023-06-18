@@ -1,5 +1,4 @@
-#include <stdio.h> 
-/**
+#include<stdio.h> /**
  * main - printing a line using printf
  * Return: - 0 (Success)
  */
