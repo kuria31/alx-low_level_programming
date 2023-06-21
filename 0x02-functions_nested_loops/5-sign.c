@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_sign -function that prints the sign of a number
- * @n: the integer that is going to be inputed
- * Return: 0 (Success) 
- */
+* print_sign -function that prints the sign of a number
+* @n:the integer that is going to be inputed
+* Return:0 
+*/
 int print_sign(int n)
 {
 	if (n > 0)

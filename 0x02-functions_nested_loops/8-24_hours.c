@@ -5,23 +5,23 @@
  */
 void jack_bauer(void)
 {
-	int a, b, c, d;
-
-	for (a = 0;a <= 2; a++)
+	int hours = 0;
+	int min = 0;
+	int hours_rem, min_rem;
+	
+	while (hours <= 23)
 	{
-		for (b = 0;b <= 3;b++)
+		while (min <= 59)
 		{
-			for (c = 0;c <= 5;c++)
-			{
-				for (d = 0;d <= 9;d++) 
-					break;
-				_putchar(a + 48);
-				_putchar(b + 48);
-				_putchar(58);
-				_putchar(c + 48);
-				_putchar(d + 48);
-				_putchar('\n');
-			}
+			hours_rem = hours % 10;
+			min_rem = min % 10;
+			_putchar(hours / 10 + 48 );
+			_putchar(hours_rem % 10 + 48);
+			_putchar(min / 10 + 48);
+			_putchar(min_rem % 10 + 48);
+			min ++;
+			_putchar('\n');
 		}
+		hours++;
 	}
 }
