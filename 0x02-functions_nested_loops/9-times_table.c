@@ -4,7 +4,7 @@
  */
 void times_table(void)
 {
-	int i, j, mul, rem, num
+	int i, j, mul, rem, num;
 
 	for (i = 0;i <= 9;i++)
 	{
@@ -14,7 +14,7 @@ void times_table(void)
 			if (mul > 9)
 			{
 				rem = mul % 10;
-				num = (mul - rem) / 10 
+				num = (mul - rem) / 10;
 					_putchar(44);
 				        _putchar(32);
 					_putchar(num + '0');
