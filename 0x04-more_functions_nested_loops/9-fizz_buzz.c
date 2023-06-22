@@ -21,14 +21,15 @@ int main(void)
 		{
 			printf("FizzBuzz, ");
 		}
+		else if (i == 100)
+		{
+			continue;
+			printf(" ");
+		}
 		else
 		{
 			printf("%d ", i);
 		}
-		
-		if (i == 100);
-		continue;
-		printf(" ");
 	}
 	printf("\n");
 	return (0);
