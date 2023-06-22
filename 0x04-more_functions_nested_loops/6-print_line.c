@@ -6,8 +6,8 @@
  */
 void print_line(int n)
 {
-	int let;
-	
+int let;
+
 	if (n > 0)
 	{
 		for (let = 0; let < n; let++)
