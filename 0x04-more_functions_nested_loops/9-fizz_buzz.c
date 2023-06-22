@@ -19,11 +19,13 @@ int main(void)
 		}
 		else if (i % 15 == 0)
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz, ");
+		}
 		else
 		{
 			printf("%d ", i);
 		}
 	}
-	printf('\n');
+	printf("\n");
+	return (0);
 }
