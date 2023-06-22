@@ -6,9 +6,11 @@
  */
 void print_line(int n)
 {
-	if (n > 0)
+	int let;
+	
+	if (let > 0)
 	{
-		for (n = 0; n < 10; n++)
+		for (let = 0; let < n; n++)
 		{
 			_putchar(95);
 		}
