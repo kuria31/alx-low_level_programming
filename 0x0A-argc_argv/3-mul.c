@@ -11,14 +11,14 @@ int main(int argc, char *argv[])
 	int i, j, sum = 0;
 
 	(void)j;
-	for (i = 1; i <= argc && i <= 2; i++)
+	for (i = 1; i < 3; i++)
 	{
 		printf("argv[%d] = %s\n", i, argv[i]);
 		sum *= atoi(argv[i]);
 	}
 	printf("the numtiplication of the two numbers is: %d", sum);
 
-	if (argc > 3)
+	if (argc == 1 || argc == 2)
 	{
 		printf("Error\n");
 		return (1);
