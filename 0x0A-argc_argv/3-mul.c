@@ -9,16 +9,15 @@
 int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
-
-	(void)j;
-	for (i = 1; i < 3; i++)
+	
+	(void)sum;
+	if (argc == 3)
 	{
-		printf("argv[%d] = %s\n", i, argv[i]);
-		sum *= atoi(argv[i]);
+		i = atoi(argv[1]);
+		j = atoi(argv[2]);
+		printf("argv[1} * argv[2]) = %s", i * j);
 	}
-	printf("the numtiplication of the two numbers is: %d", sum);
-
-	if (argc == 1 || argc == 2)
+	else
 	{
 		printf("Error\n");
 		return (1);
