@@ -9,13 +9,13 @@
 int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
-	
+
 	(void)sum;
 	if (argc == 3)
 	{
 		i = atoi(argv[1]);
 		j = atoi(argv[2]);
-		printf("argv[1} * argv[2]) = %d", i * j);
+		printf("%d\n", i * j);
 	}
 	else
 	{
