@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	{
 		i = atoi(argv[1]);
 		j = atoi(argv[2]);
-		printf("argv[1} * argv[2]) = %s", i * j);
+		printf("argv[1} * argv[2]) = %d", i * j);
 	}
 	else
 	{
