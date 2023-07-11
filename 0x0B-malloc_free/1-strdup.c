@@ -15,11 +15,11 @@ char *_strdup(char *str)
 	string = (char *)malloc(size * sizeof(char));
 	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	if (string == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	strncpy(string, str, size);
 	return (string);
