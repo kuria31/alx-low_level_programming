@@ -10,8 +10,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int l1 = strlen(s1);
-	unsigned int l2 = strlen(s2);
+	size_t l1 = strlen(s1);
+	size_t l2 = strlen(s2);
 	char *result;
 
 	if (s1 == NULL)
