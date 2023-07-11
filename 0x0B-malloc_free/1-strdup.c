@@ -11,7 +11,7 @@ char *_strdup(char *str)
 {
 	char *string;
 	unsigned int size = strlen(str) + 1;
-	
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -25,4 +25,5 @@ char *_strdup(char *str)
 	}
 	strcpy(string, str);
 	return (string);
+	free (string);
 }
