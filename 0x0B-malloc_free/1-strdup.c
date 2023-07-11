@@ -17,6 +17,10 @@ char *_strdup(char *str)
 	{
 		return (0);
 	}
+	if (string == NULL)
+	{
+		return (0);
+	}
 	strncpy(string, str, size);
 	return (string);
 }
