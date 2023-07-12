@@ -30,9 +30,9 @@ char *argstostr(int ac, char **av)
 	}
 	for (i = 0; i < ac; i++)
 	{
-		strcpy(return1 + currentposition, av[i]);
+		strcpy(result + currentposition, av[i]);
 		currentposition += strlen(av[i]);
-		result(currentposition) = '\n';
+		result[currentposition] = '\n';
 		currentposition++;
 	}
 	result[TotalLen] = '\0';
