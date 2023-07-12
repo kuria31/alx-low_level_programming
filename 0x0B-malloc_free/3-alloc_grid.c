@@ -10,7 +10,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i;
+	int i,j;
 	int **string = NULL;
 
 	if (width == 0 || height == 0)
@@ -27,6 +27,11 @@ int **alloc_grid(int width, int height)
 		string[i] = (int *)malloc(height * sizeof(int));
 		if (string[i] == NULL)
 		{
+			for (j = 0; j < i; j++)
+			{
+				free(string[j]);
+			}
+			free(string);
 			return (NULL);
 		}
 	}
