@@ -10,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char *return1;
+	char *result;
 	int i;
 	int TotalLen = 0;
 	size_t currentposition = 0;
@@ -23,18 +23,18 @@ char *argstostr(int ac, char **av)
 	{
 		TotalLen += strlen(av[i]) + 1;
 	}
-	return1 = (char *)malloc((TotalLen + 1) * sizeof(int));
-	if (return1 == NULL)
+	result = (char *)malloc((TotalLen + 1) * sizeof(int));
+	if (result == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < ac; i++)
 	{
-		strcpy (return1 + currentposition, av[i]);
+		strcpy(return1 + currentposition, av[i]);
 		currentposition += strlen(av[i]);
-		return1[currentposition] = '\n';
+		result(currentposition) = '\n';
 		currentposition++;
 	}
-	return1[TotalLen] = '\0';
-	return (return1);
+	result[TotalLen] = '\0';
+	return (result);
 }
