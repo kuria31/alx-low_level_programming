@@ -11,20 +11,24 @@
 int **alloc_grid(int width, int height)
 {
 	int i;
-	int **string = 0;
+	int **string = NULL;
 
-	if (string == NULL)
-	{
-		return (NULL);
-	}
 	if (width == 0 || height == 0)
 	{
 		return (NULL);
 	}
-	string = (int **)malloc(width * sizeof(int *));
-	for (i = 0; i < width; i++)
+	string = (int **)malloc(height * sizeof(int *));
+	if (string == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < height; i++)
 	{
 		string[i] = (int *)malloc(height * sizeof(int));
+		if (string[i] == NULL)
+		{
+			return (NULL);
+		}
 	}
 	return (string);
 }
