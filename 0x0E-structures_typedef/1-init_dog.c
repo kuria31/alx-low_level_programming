@@ -1,13 +1,16 @@
 #include <stdlib.h>
 #include <string.h>
+#include "dog.h"
 
-/* Definition of struct dog */
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
+/**
+ * Definition of struct dog
+ * struct dog
+ * {
+ * char *name;
+ * float age;
+ * char *owner;
+ * };
+ */
 
 /**
  * init_dog - function that initialize a variable of type struct dog
