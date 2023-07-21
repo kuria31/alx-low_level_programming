@@ -1,4 +1,6 @@
 #include <stdarg.h>
+#include <stddef.h>
+#include <stdio.h>
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARRIADIC_FUNCTIONS_H
 int sum_them_all(const unsigned int n, ...);
